@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+    width: 1140px;    
+    margin: 0 auto;
+}
+
+header, section, footer {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*--------------barra de navegación--------------*/
+header {
+    background-color: #2D2D2D;
+    padding: 0;
+}
+
+.logo {
+    color: #EAE8E4;
+    width: 280px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+nav {
+    width: 480px;
+}
+
+.dflex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.link {
+    color: #EAE8E4;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.link:hover {
+    color: #FF8170;
+}
+/*--------------fin barra de navegación--------------*/
+
+
+/*--------------portada--------------*/
+#portada {
+    background-image: url(img/luces-portada.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 550px;
+    padding-top: 150px;
+    text-align: center;
+}
+
+.zoom-logo {
+    width: 800px;
+    height: 188px;
+    overflow: visible;
+    margin: 0 auto;
+}
+
+.zoom-logo img {
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+}
+
+.zoom-logo:hover img {
+    transform: scale(1.1);
+}
+
+#portada h1 {
+    color: #EAE8E4;
+    font-weight: 700;
+}
+/*--------------fin portada--------------*/
+
+
+/*--------------ajustes de texto--------------*/
+h1 {
+    color: #2D2D2D;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+h1 span {
+    color: #e45644;
+    font-size: 2.3rem
+}
+
+h2 {
+    color: #2D2D2D;
+    font-size: 1.8rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 50px;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #e45644;
+}
+
+h3 {
+    color: #2D2D2D;
+    text-align: center;
+    font-weight: 600;
+}
+
+p {
+    color: #2D2D2D;
+    font-size: 1rem;
+    margin: 10px 0;
+    line-height: 1.5em;
+}
+/*--------------fin ajustes de texto--------------*/
+
+
+/*--------------section nosotras--------------*/
+#nosotras {
+    background-color: #EAE8E4;
+    padding-bottom: 50px;
+}
+
+#nosotras h2 {
+    padding-bottom: 10px;
+}
+
+#nosotras p {
+    text-align: center;
+    margin-left: 140px;
+    margin-right: 140px;
+}
+/*--------------fin section nosotras--------------*/
+
+
+/*--------------section servicios--------------*/
+#servicios {
+    background-color: #2D2D2D;
+    padding-bottom: 50px;
+}
+
+#servicios h2 {
+    color: #EAE8E4;
+    text-decoration-color: #FF8170;
+    padding-bottom: 10px;
+}
+
+#servicios h3 {
+    color: #FF8170;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+.que-ofrecemos {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.que-ofrecemos p {
+    color: #EAE8E4;
+    margin: 0;
+}
+
+.que-ofrecemos img {
+    margin-bottom: 20px;
+}
+
+.espacio {
+    margin: 40px;
+}
+/*--------------fin section servicios--------------*/
+
+
+/*--------------galería--------------*/
+#portfolio {
+    background-color: #EAE8E4;
+    padding-bottom: 60px;
+}
+
+#portfolio h3 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#portfolio h2 {
+    padding-bottom: 0px;
+}
+
+#portfolio .galeria, .galeria2, .galeria3 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.galeria2, .galeria3 {
+    padding-top: 30px;
+}
+
+.zoom-galeria {
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.zoom-galeria img {
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+}
+
+.zoom-galeria:hover img {
+    transform: scale(1.1);
+}
+/*--------------fin galería--------------*/
+
+
+/*--------------section contactanos--------------*/
+#contactanos {
+    background-image: url(img/imagen-fondo.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding-top: 150px;
+    height: 500px;
+}
+
+#contactanos h1 {
+    color: #FF8170;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 15px;
+    padding: 15px 20px;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.btn-trazo {
+    background: transparent;
+    border: 3px solid #FF8170;
+    border-radius: 5px;
+    color: #FF8170;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.btn-trazo:hover {
+    background: #FF8170;
+    color: #2D2D2D;
+}
+/*--------------fin section contactanos--------------*/
+
+
+/*--------------section equipo--------------*/
+#equipo {
+    background-color: #EAE8E4;
+    padding-bottom: 60px;
+}
+
+#equipo h2 {
+    padding-bottom: 30px;
+}
+
+#equipo p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #2D2D2D;
+}
+
+#equipo .info, .info-2 {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+#equipo .info {
+    padding-bottom: 40px;
+}
+
+#equipo .info-2 {
+    text-align: right;
+}
+
+.sobre-mi, .sobre-mi-2 {
+    width: 660px
+}
+
+.zoom {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 40px;
+}
+
+.zoom img {
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+}
+
+.zoom:hover img {
+    transform: scale(1.1);
+}
+/*--------------fin section equipo--------------*/
+
+
+/*--------------section contacto/formulario--------------*/
+#contacto {
+    background-color: #2D2D2D;
+    background-image: url(img/mapa-contacto.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 40px;
+}
+
+#contacto h2 {
+    color: #FF8170;
+    text-decoration: none;
+    padding-bottom: 20px;
+}
+
+h2 span {
+    color: #EAE8E4;
+}
+
+#contacto h3 {
+    color: #EAE8E4;
+    font-weight: 400;
+}
+
+form {
+    width: 65%;
+    margin: 30px auto;
+}
+
+label {
+    display: block;
+    color: #EAE8E4;
+    font-weight: 300;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px 10px;
+    margin: 5px 0;
+    border-radius: 6px;
+    background-color: #eae8e4c4;
+    border: 1px solid #2D2D2D;
+    font-size: 1rem;
+}
+.campos {
+    margin-bottom: 10px;
+}
+
+.asterisco {
+    color: #FF8170;
+    font-weight: 600;
+}
+
+.btn-centrado {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-form {
+    display: inline-block;
+    padding: 10px 40px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #2D2D2D;
+    background: #FF8170;
+    border: 2px solid #FF8170;
+    border-radius: 6px;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.btn-form:hover {
+    background-color: transparent;
+    color: #FF8170;
+}
+/*--------------fin section contacto/formulario--------------*/
+
+
+/*--------------footer--------------*/
+footer {
+    background-color: #EAE8E4;
+    font-weight: 700;
+}
+
+.redes {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
